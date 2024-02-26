@@ -1,0 +1,481 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "Measurement",
+            "base": "",
+            "fields": [
+                {
+                    "name": "temperature",
+                    "type": "bool"
+                },
+                {
+                    "name": "humidity",
+                    "type": "bool"
+                },
+                {
+                    "name": "oxygen",
+                    "type": "bool"
+                },
+                {
+                    "name": "ammonia",
+                    "type": "bool"
+                },
+                {
+                    "name": "entryIds",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "Ownership",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ownerId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "ownershipTimestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "Src_Dest",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "addproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "productRFID",
+                    "type": "string"
+                },
+                {
+                    "name": "ownershipTimestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "associate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "productRFID",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "clear",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "enterscan",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "scannedProductRFIDs",
+                    "type": "string[]"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "entryStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transmitterSig",
+                    "type": "string"
+                },
+                {
+                    "name": "receiverSig",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "temperature",
+                    "type": "float32"
+                },
+                {
+                    "name": "humidity",
+                    "type": "float32"
+                },
+                {
+                    "name": "ammoniaConcentration",
+                    "type": "float32"
+                },
+                {
+                    "name": "dissolvedOxygen",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "exitscan",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "scannedProductRFIDs",
+                    "type": "string[]"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "initlogtek",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "sensors",
+                    "type": "string[]"
+                },
+                {
+                    "name": "fishingDate",
+                    "type": "string"
+                },
+                {
+                    "name": "weight",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "logtekStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "sensors",
+                    "type": "string[]"
+                },
+                {
+                    "name": "productRFID",
+                    "type": "string[]"
+                },
+                {
+                    "name": "owner",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fishingDate",
+                    "type": "string"
+                },
+                {
+                    "name": "weight",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "memberStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "member_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "receivers",
+                    "type": "string[]"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "productStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "productRFID",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekIds",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "ownershipHistory",
+                    "type": "Ownership[]"
+                },
+                {
+                    "name": "conditions",
+                    "type": "Measurement"
+                }
+            ]
+        },
+        {
+            "name": "rejectscan",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "logtekSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "scannedProductRFIDs",
+                    "type": "string[]"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "transmitterSig",
+                    "type": "string"
+                },
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "temperature",
+                    "type": "float32"
+                },
+                {
+                    "name": "humidity",
+                    "type": "float32"
+                },
+                {
+                    "name": "ammoniaConcentration",
+                    "type": "float32"
+                },
+                {
+                    "name": "dissolvedOxygen",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "setmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "receiversSig",
+                    "type": "string[]"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addproduct",
+            "type": "addproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "associate",
+            "type": "associate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clear",
+            "type": "clear",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "enterscan",
+            "type": "enterscan",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exitscan",
+            "type": "exitscan",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initlogtek",
+            "type": "initlogtek",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rejectscan",
+            "type": "rejectscan",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setentry",
+            "type": "setentry",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmember",
+            "type": "setmember",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "entries",
+            "type": "entryStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "logteks",
+            "type": "logtekStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "members",
+            "type": "memberStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "products",
+            "type": "productStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

@@ -1,0 +1,176 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addproductnb",
+            "base": "",
+            "fields": [
+                {
+                    "name": "member",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                },
+                {
+                    "name": "number",
+                    "type": "uint32"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "clear",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "memberStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "name"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                },
+                {
+                    "name": "receivers",
+                    "type": "string[]"
+                },
+                {
+                    "name": "entries",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "ownershipStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "member",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "string"
+                },
+                {
+                    "name": "number",
+                    "type": "uint32"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                },
+                {
+                    "name": "src_Dest",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "name"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                },
+                {
+                    "name": "receiversSig",
+                    "type": "string[]"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addentry",
+            "type": "addentry",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addproductnb",
+            "type": "addproductnb",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clear",
+            "type": "clear",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmember",
+            "type": "setmember",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "members",
+            "type": "memberStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "ownership",
+            "type": "ownershipStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

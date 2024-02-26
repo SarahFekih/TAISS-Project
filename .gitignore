@@ -1,0 +1,11 @@
+ProjectBFSub/node_modules/
+ProjectMaxMax/node_modules/
+ProjectMinMin/node_modules/
+
+ProjectBFSub/config.js
+ProjectMaxMax/config.js
+ProjectMaxMax/taissmax/vcpkg/
+ProjectMinMin/config.js
+
+my-eosio-network/
+.vscode/

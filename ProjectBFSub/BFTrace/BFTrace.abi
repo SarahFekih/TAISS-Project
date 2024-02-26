@@ -1,0 +1,321 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "bloomfilter_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "member",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                },
+                {
+                    "name": "num_hashes",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_elements",
+                    "type": "uint64"
+                },
+                {
+                    "name": "num_elements",
+                    "type": "uint64"
+                },
+                {
+                    "name": "size_bits",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bloom_filter",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "clear",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "exists",
+            "base": "",
+            "fields": [
+                {
+                    "name": "member",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                },
+                {
+                    "name": "positions",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "insert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "member",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "participant",
+                    "type": "string"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                },
+                {
+                    "name": "positions",
+                    "type": "pair_uint64_uint64[]"
+                },
+                {
+                    "name": "num",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "memberStruct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "name"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                },
+                {
+                    "name": "receivers",
+                    "type": "string[]"
+                },
+                {
+                    "name": "entTotal",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "pair_uint64_uint64",
+            "base": "",
+            "fields": [
+                {
+                    "name": "first",
+                    "type": "uint64"
+                },
+                {
+                    "name": "second",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "transmitterSig",
+                    "type": "string"
+                },
+                {
+                    "name": "receiverSignature",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "temperature",
+                    "type": "float32"
+                },
+                {
+                    "name": "humidity",
+                    "type": "float32"
+                },
+                {
+                    "name": "ammoniaConcentration",
+                    "type": "float32"
+                },
+                {
+                    "name": "dissolvedOxygen",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "setmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "name"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "certification",
+                    "type": "string"
+                },
+                {
+                    "name": "receivers",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "simcoef",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sender",
+                    "type": "name"
+                },
+                {
+                    "name": "receiver",
+                    "type": "name"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "similarity",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "coefficient",
+                    "type": "float64"
+                },
+                {
+                    "name": "sender",
+                    "type": "name"
+                },
+                {
+                    "name": "receiver",
+                    "type": "name"
+                },
+                {
+                    "name": "destination",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "clear",
+            "type": "clear",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exists",
+            "type": "exists",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "insert",
+            "type": "insert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setentry",
+            "type": "setentry",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmember",
+            "type": "setmember",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "simcoef",
+            "type": "simcoef",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "bloomfilter",
+            "type": "bloomfilter_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "members",
+            "type": "memberStruct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "simresult",
+            "type": "similarity",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

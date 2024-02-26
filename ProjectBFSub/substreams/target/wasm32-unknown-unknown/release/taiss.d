@@ -1,0 +1,1 @@
+/home/as10260/TAISS/ProjectBFSub/substreams/target/wasm32-unknown-unknown/release/taiss.wasm: /home/as10260/TAISS/ProjectBFSub/substreams/src/abi.rs /home/as10260/TAISS/ProjectBFSub/substreams/src/lib.rs /home/as10260/TAISS/ProjectBFSub/substreams/src/sink.rs

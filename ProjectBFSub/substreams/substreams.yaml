@@ -1,0 +1,24 @@
+specVersion: v0.1.0
+
+package:
+  name: taiss
+  version: v0.1.0
+
+imports:
+  prometheus: https://github.com/pinax-network/substreams-sink-prometheus.rs/releases/download/v0.1.9/substreams-sink-prometheus-v0.1.9.spkg
+
+
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: ./target/wasm32-unknown-unknown/release/taiss.wasm
+
+
+modules:
+  - name: prom_out
+    kind: map
+    inputs:
+      - source: sf.antelope.type.v1.Block
+    output:
+      type: proto:pinax.substreams.sink.prometheus.v1.PrometheusOperations
+      
